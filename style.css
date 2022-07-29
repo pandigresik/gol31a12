@@ -14,16 +14,23 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #efc1cf;
 }
+
+marquee{
+    background-color: rgb(235, 230, 230);
+}
+
 .main-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding-top: 10px;    
-    border-bottom: 2px solid gray;
-    background-color: #fff;
+    padding-bottom: 10px; 
+    border-bottom: 1px solid gray;
+    background-color: #f0b9ca;
+    z-index:1;
 }
 .container-fluid {
     width: 100%;
@@ -36,7 +43,7 @@ body {
     align-items: center !important;
 }
 .logo img {
-    max-height: 34px;
+    max-height: 50px;
     border: 0;
     float: left;
     margin-top: 0;
@@ -63,6 +70,7 @@ body {
     float: right;
     margin-right: 10px;
 }
+
 .text-left {
   float: left;  
 }
@@ -74,6 +82,8 @@ body {
     border: 1px solid gray;
     border-radius: 4px;
     padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(235, 230, 230);
 }
 
 main {
@@ -87,21 +97,56 @@ main {
 
 .sidebar {
     float: right;
-    width: 24%;
+    width: 26%;
+    height: auto;
 }
 
 .wrapper-jadwal .item-jadwal {
     float: left;
     width: 20%;
     margin: 10px;
-    background: #063807;
-    color: #fff;
+    background-color: rgba(226, 159, 159, 0.61);
+    animation-name: example;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
+}
+
+@keyframes example {
+    10% {background-color: rgb(220, 134, 134);}
+    20% {background-color: rgb(217, 217, 124);}
+    30% {background-color: rgb(110, 110, 214);}
+    40% {background-color: rgb(127, 223, 127);}
+    50% {background-color: rgb(88, 199, 219);}
+    60% {background-color: rgb(151, 51, 143);}
+    70% {background-color: rgb(193, 97, 122);}
+    80% {background-color: rgb(225, 162, 240);}
+    90% {background-color: rgb(240, 244, 164);}
+    100% {background-color: rgb(162, 165, 199);}
 }
 
 h3.title {
     margin: 5px 10px;
     border-bottom: 2px solid #063807;
 }
+
+footer {
+    padding: 90px 15px 0px 15px;
+}
+
+.content_footer {
+    width: 100%;  
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+    border: 1px solid gray;  
+    border-radius: 4px;
+    background-color: rgb(235, 230, 230);
+
+}
+
