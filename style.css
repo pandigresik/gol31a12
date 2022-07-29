@@ -90,20 +90,22 @@ main {
     padding: 90px 15px 0px 15px;
 }
 
-.content {
-    float: left;
-    width: 70%;    
-}
+@media (min-width: 576px) {
+  .content {
+        float: left;
+        width: 70%;    
+    }
 
-.sidebar {
-    float: right;
-    width: 26%;
-    height: auto;
+    .sidebar {
+        float: right;
+        width: 26%;
+        height: auto;        
+    }
 }
 
 .wrapper-jadwal .item-jadwal {
-    float: left;
-    width: 20%;
+    display: inline-block;
+    width: 25%;
     margin: 10px;
     background-color: rgba(226, 159, 159, 0.61);
     animation-name: example;
@@ -111,7 +113,7 @@ main {
     animation-duration: 20s;
     font-weight: bold;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: middle;    
 }
 
 @keyframes example {
