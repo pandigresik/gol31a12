@@ -112,7 +112,8 @@ footer {
 }
 
 .content_footer {
+    margin-top: 10px;
     float: left;
-    width: 100%;  
+    width: 98%;  
     border: 1px solid gray;  
 }
